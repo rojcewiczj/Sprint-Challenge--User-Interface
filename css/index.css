@@ -29,7 +29,8 @@ footer, header, hgroup, menu, nav, section {
 	display: block;
 }
 body {
-	line-height: 1;
+    line-height: 1;
+    background-color: black
 }
 ol, ul {
 	list-style: none;
@@ -49,6 +50,7 @@ table {
 
 * {
     box-sizing: border-box;
+    font-weight: 595;
 }
 
 html, body {
@@ -66,6 +68,25 @@ p {
     line-height: 1.4;
 }
 
+.header1 {
+    display: flex;
+    margin: 20px auto;
+    width: 800px;
+    justify-content: space-between;
+    align-items: baseline;
+}
+ nav {
+    display: flex;
+    width: 625px;
+    margin: 20px auto;
+    justify-content: space-around;
+    font-size: 14px;
+    font-weight: bold;
+}
+.jumbo1 {
+    width: 800px;
+    margin: 10px auto;
+}
 .container {
     width: 800px;
     margin: 0 auto;
@@ -104,13 +125,57 @@ p {
 .middle-content .boxes .box {
     width: 12.5%;
     height: 100px;
-    background: black;
     margin: 20px 2.5%;
     color: white;
     display: flex;
     align-items: center;
     justify-content: center;
+   
 }
+.middle-content .boxes .box:hover {
+    width: 12.5%;
+    height: 100px;
+    margin: 20px 2.5%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    transition: 1.5s;
+}
+
+.box1 {
+    background: teal;
+    
+}
+.box2 {
+    background: gold;
+}
+.box3 {
+    background: cadetblue;
+}
+.box4 {
+    background: coral;
+}
+.box5 {
+    background: crimson;
+}
+.box6 {
+    background: forestgreen;
+}
+.box7 {
+    background: darkorchid;
+}
+.box8 {
+    background: hotpink;
+}
+.box9 {
+    background: indigo;
+}
+.box10 {
+    background: dodgerblue;
+}
+
 
 .bottom-content {
     display: flex;
@@ -127,8 +192,9 @@ p {
 }
 
 footer {
-    width: 100%;
+    width: 800px;
     background: black;
+    margin: 0 auto;
 }
 
 footer nav {
@@ -144,3 +210,79 @@ footer nav a {
     color: white;
     text-decoration: none;
 }
+
+/* about page -- starts here!!! */
+@media only screen 
+and (min-width: 375px) 
+and (max-width: 667px) {
+	body * {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    
+  }
+.about-page {
+    width: 1000px;
+    padding: 10px 0px;
+    margin: 0 auto;
+    background-color: white;
+}
+
+.about { 
+    width: 800px;
+    margin: 10px auto 20px auto;
+    padding: 20px 20px;
+    
+    border-bottom: 1px dashed black;
+}
+
+.workTogether {
+    width: 800px;
+    margin: 10px auto 40px auto;
+    padding: 20px 20px;
+    
+}
+
+.mainContent {
+    width: 800px;
+    display: flex;
+    justify-content: space-between;
+    
+    margin: 0px auto 20px auto;
+    
+}
+.contentBox {
+    width: 395px;
+    border-bottom: 1px dashed black;
+    padding: 0px 0px 20px 0px;
+    margin: 10px 0px;
+    height: auto;
+    
+}
+
+.contentBox h6 {
+    text-align: center;
+    font-size: 15px;
+	width: 120px;
+    margin: 10px 0px 0px 0px;
+    height: auto;
+    padding: 10px;
+	border: 1px solid black;
+	border-radius: 10%;
+}
+
+.contentBox h6:hover  {
+    
+    padding: 20px;
+   transition: 1.5s;
+
+
+}
+
+.info {
+    width: 0 auto;
+    height: 150px;
+    padding: 10px 0px 10px 0px;
+}
+
+
